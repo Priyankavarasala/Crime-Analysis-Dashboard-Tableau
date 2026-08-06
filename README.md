@@ -1,231 +1,37 @@
-# 🚔 Crime Analysis Dashboard - Tableau
+# 🚔 Crime Analysis Dashboard | Tableau
 
-## 📌 Project Overview
-
-The **Crime Analysis Dashboard** is an interactive Tableau project designed to analyze crime patterns, hotspots, arrest statistics, incident trends, and time-based crime behavior.
-
-This dashboard helps users understand crime distribution, identify high-risk locations, monitor frequently reported crime categories, and support data-driven public safety decisions.
-
----
+An interactive Tableau dashboard analyzing 247,000+ crime records to identify hotspots, trends, and category patterns — built to support resource allocation and public safety planning.
 
 ## 🎯 Business Problem
+Public safety planning requires knowing not just how much crime is happening, but where, when, and what type — so resources can be allocated to the highest-need areas instead of spread evenly.
 
-Crime datasets contain large volumes of incident records, making it difficult to manually identify trends, hotspots, and severity patterns.
+## 💡 Key Findings
+*(Analysis of 247,797 Chicago crime records)*
+- **Theft was the most common crime type** (58,434 cases, 23.6% of all records), followed by Battery (46,080) and Criminal Damage (26,347)
+- **District 11 recorded the most incidents (17,320)**, followed by District 6 (15,531) and District 8 (15,157) — a clear hotspot for resource prioritization
+- **Only 20.3% of reported crimes resulted in an arrest** (79.7% not arrested), highlighting a large gap between incidents reported and cases resolved
+- **16.6% of all incidents were domestic-related**
+- **Streets and residences were the top two incident locations** (54,127 and 42,685 records respectively), together accounting for nearly 40% of all crime
+- **Crime is fairly evenly spread across time of day**: night (29.1%), afternoon (27.0%), evening (22.2%), morning (21.7%) — with a sharp spike around midday (12PM) and a dip in early morning hours (4–5AM)
 
-This project converts raw crime data into interactive visual insights to help answer:
+## 🛠 What I Built
+- Geographic hotspot mapping across 247,000+ records
+- Time-based trend analysis (yearly/monthly/daily patterns)
+- Category-level breakdown of crime types
+- Interactive filters for drill-down by location, time period, and crime category
 
-- Which crimes are reported most frequently?
-- Which locations have recent criminal activity?
-- What time of day are crimes most likely to occur?
-- How do crime incidents change over time?
-- What percentage of reported crimes result in arrests?
-- Which crime categories are severe or non-severe?
+## 🧰 Tools
+Tableau Desktop · Excel · Data Cleaning · Geographic Mapping · Trend Analysis
 
----
+## 📈 Impact
+Converts a 247K-record raw dataset into a filterable view that surfaces District 11 and theft/battery as the top priorities for patrol allocation, and flags the 80% non-arrest rate as an area worth deeper investigation — supporting data-driven resource allocation decisions.
 
-## 🎯 Objectives
-
-- Analyze overall crime statistics
-- Identify crime hotspots using map visualizations
-- Track crime trends over multiple years
-- Compare severe and non-severe crimes
-- Analyze arrest made vs not made
-- Study hourly, weekday, and time-block crime patterns
-- Build interactive dashboards for public safety insights
-
----
-
-## 🛠 Tools & Technologies
-
-- Tableau Desktop
-- Data Cleaning
-- Data Visualization
-- Calculated Fields
-- Interactive Filters
-- Maps
-- Dashboard Design
-- Business Intelligence
-
----
-
-## 📂 Dataset
-
-The dataset includes crime incident records with details such as:
-
-- Case Number
-- Crime Date and Time
-- Primary Crime Type
-- Arrest Status
-- Location Description
-- Latitude and Longitude
-- Crime Severity
-- Time Block
-- Year
-
----
-
-## 📊 Dashboard Pages
-
-### 1️⃣ Overall Crime Statistics Dashboard
-
-**Features:**
-- Total Crimes KPI
-- Current Year Crimes
-- Latest Crime Date
-- Crime Hotspot Map
-- Most Recent Crimes Table
-- Crime Type Distribution
-
-**Insights:**
-- Identifies frequently reported crime categories
-- Highlights locations with recent criminal history
-- Tracks latest crime incidents
-- Provides a quick executive-level crime summary
-
----
-
-### 2️⃣ Time Period Analysis Dashboard
-
-**Features:**
-- Crime Incidents by Hour
-- Crime Incidents by Weekday
-- Crime Distribution by Time Block
-
-**Insights:**
-- Identifies peak crime hours
-- Compares crime incidents across weekdays
-- Shows crime distribution across morning, afternoon, evening, and night
-
----
-
-### 3️⃣ Comparative Analysis Dashboard
-
-**Features:**
-- Severe vs Non-Severe Crime Analysis
-- Crime Category Comparison
-- Arrest Made vs Not Arrested Analysis
-
-**Insights:**
-- Identifies high-risk crime categories
-- Compares severity levels across crime types
-- Measures arrest performance and investigation outcomes
-
----
-
-### 4️⃣ Trend Analysis Dashboard
-
-**Features:**
-- Crime Rate Trend Over Years
-- Year-over-Year Incident Change
-- Time Block Trend Analysis
-- Interactive Date Filters
-
-**Insights:**
-- Tracks long-term changes in crime volume
-- Highlights annual increases or decreases in reported incidents
-- Supports trend-based crime monitoring
-
----
-
-## 📈 Key KPIs
-
-- Total Crimes
-- Current Year Crimes
-- Latest Crime Date
-- Arrest Percentage
-- Crime Categories
-- Crime Hotspots
-- Peak Crime Hours
-- Yearly Crime Trend
-
----
-
-## 🔍 Key Insights
-
-- Theft is the most frequently reported crime category.
-- Crime incidents are concentrated in specific geographical hotspots.
-- Afternoon and night time blocks contribute significantly to reported incidents.
-- A large percentage of reported crimes did not result in arrests.
-- Crime trends show significant variation across years.
-- Severe crime analysis helps identify categories requiring priority attention.
-
----
-
-## 💡 Skills Demonstrated
-
-- Tableau Dashboard Development
-- Data Visualization
-- Business Intelligence
-- KPI Reporting
-- Geographic Mapping
-- Trend Analysis
-- Comparative Analysis
-- Crime Analytics
-- Interactive Dashboard Design
-- Data Storytelling
-- Analytical Thinking
-
----
-
-## 📁 Repository Contents
-
+## 📁 Files
 | File | Description |
-|------|-------------|
-| Crime_Analysis_Dashboard.twbx | Tableau dashboard workbook |
-| Crime_Dataset.zip | Source dataset |
-| Overall Crime Statistics Dashboard.png | Dashboard screenshot |
-| Time Period Analysis Dashboard.png | Dashboard screenshot |
-| Comparative Analysis Dashboard.png | Dashboard screenshot |
-| Trend Analysis Dashboard.png | Dashboard screenshot |
-| README.md | Project documentation |
+|---|---|
+| Crime_Analysis_dashboard.twb | Tableau workbook |
+| Crime_Sampledata.xlsx | Source crime sample data set (due to size limitation) |
+| Screenshots | Dashboard views |
 
 ---
-
-## 📸 Dashboard Preview
-
-### Overall Crime Statistics Dashboard
-
-<img width="1920" height="1080" alt="Overall Crime Statistics Dashboard" src="https://github.com/user-attachments/assets/9e977d91-2c60-40ff-8d6d-ad1f78773274" />
-
-
----
-
-### Time Period Analysis Dashboard
-
-<img width="1920" height="1080" alt="Time Period Analysis Dashboard" src="https://github.com/user-attachments/assets/7f5c915f-fc00-4636-b063-f7a5b6c1afed" />
-
-
----
-
-### Comparative Analysis Dashboard
-
-<img width="1920" height="1080" alt="Comparitive Analysis Dasboard" src="https://github.com/user-attachments/assets/ab0615a2-47ed-420a-aac7-58c329b77c92" />
-
-
----
-
-### Trend Analysis Dashboard
-
-<img width="1920" height="1080" alt="Trend Analysis Dashboard" src="https://github.com/user-attachments/assets/b5b45dfc-e0e0-4da8-9d5a-dbd2deed5d09" />
-
-
----
-
-## 🎯 Business Value
-
-This dashboard helps decision-makers:
-
-- Monitor crime activity efficiently
-- Identify high-risk locations
-- Understand crime trends over time
-- Improve resource allocation
-- Analyze arrest outcomes
-- Support data-driven public safety planning
-
----
-
-## 👩‍💻 Developed By
-
-**Priyanka Varasala**
-
-Aspiring Data Analyst | Tableau | Power BI | SQL | Advanced Excel | Python | MIS Reporting | Data Visualization | Business Intelligence
+**Priyanka Varasala** — Data Analyst (6+ yrs government reporting background) transitioning into analytics | Power BI · SQL · Tableau · Python
